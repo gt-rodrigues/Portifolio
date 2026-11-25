@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Anton", sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+/* Contorno sutil para a palavra gigante de fundo não competir com a leitura */
+.text-outline-subtle {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.08);
+}
+
+@media (min-width: 1024px) {
+  .text-outline-subtle {
+    -webkit-text-stroke: 1.25px rgba(255, 255, 255, 0.085);
+  }
+}
+
+/* Granulado editorial sutil sobre a tela */
+.bg-noise {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 20px 20px;
+}
