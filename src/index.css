@@ -6,20 +6,58 @@
   --font-sans: "Inter", sans-serif;
 }
 
-/* Contorno sutil para a palavra gigante de fundo não competir com a leitura */
-.text-outline-subtle {
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.08);
-}
-
-@media (min-width: 1024px) {
-  .text-outline-subtle {
-    -webkit-text-stroke: 1.25px rgba(255, 255, 255, 0.085);
-  }
-}
-
-/* Granulado editorial sutil sobre a tela */
+/* Fundo base absoluto com textura de granulado sutil */
 .bg-noise {
   background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
   background-size: 20px 20px;
+}
+
+/* Contorno sutil ao fundo para não competir com a ficha técnica */
+.text-outline-subtle {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(184, 192, 204, 0.075);
+}
+
+/* Título principal com acabamento metálico / liquid chrome e micro-aberração */
+.chrome-entity-title {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #dce3ec 38%,
+    #7f8a9c 52%,
+    #f1f5f9 78%,
+    #94a3b8 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(-1.5px 0 0 rgba(125, 211, 252, 0.32))
+    drop-shadow(1.5px 0 0 rgba(251, 113, 133, 0.22))
+    drop-shadow(0 0 18px rgba(255, 255, 255, 0.14));
+}
+
+/* Micro-aberração cromática nas bordas de alto brilho do cristal */
+.chromatic-edge {
+  box-shadow:
+    -1.5px 0 6px rgba(125, 211, 252, 0.22),
+    1.5px 0 6px rgba(251, 113, 133, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+/* Botão HUD com vidro escuro, reflexo e cantos marcados */
+.hud-glass-btn {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.25s ease;
+}
+
+.hud-glass-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.55);
+  box-shadow:
+    0 0 24px rgba(255, 255, 255, 0.12),
+    inset 0 0 14px rgba(255, 255, 255, 0.1);
 }

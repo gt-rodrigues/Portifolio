@@ -1,24 +1,34 @@
 export const portfolioData = {
   brandName: "RAISSA",
   version: "2.0",
+  entityTitle: "RAISSA // 2.0",
   bgWord: "DEVELOPER",
-  roleTag: "DESENVOLVEDORA FULL STACK • UI/UX DESIGNER • ENGENHEIRA DE PROMPT",
-  headline: "CONSTRUINDO EXPERIÊNCIAS DIGITAIS INTELIGENTES E ESCALÁVEIS",
-  subheadline:
-    "Unindo arquitetura de software, design de interfaces centrado no usuário e engenharia de prompt para transformar ideias complexas em produtos elegantes.",
-  githubUsername: "gt-rodrigues",
-  githubUrl: "https://github.com/gt-rodrigues",
+  githubUsername: "gt-rodrigues", // <-- Troque pelo seu @ do GitHub
+  githubUrl: "https://github.com/gt-rodrigues", // <-- Troque pelo seu link
   navLinks: [
-    { label: "SOBRE", href: "#sobre" },
-    { label: "PROJETOS", href: "#projetos" },
-    { label: "SKILLS", href: "#skills" },
-    { label: "CONTATO", href: "#contato" },
+    { code: "01", label: "SOBRE", href: "#sobre" },
+    { code: "02", label: "PROJETOS", href: "#projetos" },
+    { code: "03", label: "SKILLS", href: "#skills" },
+    { code: "04", label: "CONTATO", href: "#contato" },
+  ],
+  specGroups: [
+    [
+      { key: "OBJECT", value: "DEVELOPER WORKSTATION" },
+      { key: "ROLE", value: "FULL STACK DEVELOPER" },
+      { key: "SPECIALTY", value: "UI/UX DESIGN & PROMPT ENGINEERING" },
+    ],
+    [
+      { key: "CORE", value: "INTELLIGENT & SCALABLE EXPERIENCES" },
+      { key: "ARCHITECTURE", value: "USER-CENTERED" },
+      { key: "EXECUTION", value: "HIGH-PRECISION CODE" },
+      { key: "OUTPUT", value: "ELEGANT DIGITAL PRODUCTS" },
+    ],
   ],
   about: {
     title: "Sobre Mim",
     paragraphs: [
-      "Sou Desenvolvedora Full Stack, UI/UX Designer e Engenheira de Prompt apaixonada por criar soluções onde estética e performance caminham juntas.",
-      "Minha abordagem combina código limpo e escalável no back-end e front-end com interfaces intuitivas de alto contraste e fluxos potencializados por Inteligência Artificial.",
+      "Sou Raissa — Desenvolvedora Full Stack, UI/UX Designer e Engenheira de Prompt. Construo aplicações web completas combinando arquitetura sólida, interfaces precisas e fluxos inteligentes com IA.",
+      "Cada projeto é tratado como um sistema vivo: da prototipagem e experiência do usuário até o código em produção, com atenção aos detalhes visuais, performance e clareza técnica.",
     ],
   },
 };
